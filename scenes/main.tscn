@@ -1,8 +1,25 @@
-[gd_scene load_steps=3 format=3 uid="uid://uhirk4j0bkkb"]
+[gd_scene load_steps=9 format=3 uid="uid://uhirk4j0bkkb"]
+
+[ext_resource type="FontFile" uid="uid://iund57xk6mri" path="res://resources/fonts/Inter/static/Inter_18pt-Regular.ttf" id="1_c8co6"]
 
 [sub_resource type="Theme" id="Theme_u0dgb"]
 
 [sub_resource type="Theme" id="Theme_81gai"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_myckk"]
+bg_color = Color(1, 0.317647, 0.317647, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_1xb3f"]
+bg_color = Color(0, 1, 0.301961, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_bnd5r"]
+bg_color = Color(0, 0.572549, 0.545098, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_djoeh"]
+bg_color = Color(0.890196, 0.415686, 0, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_xx41g"]
+bg_color = Color(0.992157, 0.219608, 0.631373, 1)
 
 [node name="Main" type="Control"]
 layout_mode = 3
@@ -24,3 +41,44 @@ theme = SubResource("Theme_81gai")
 
 [node name="Button" type="Button" parent="HSplitContainer/Calculadora"]
 layout_mode = 2
+
+[node name="Menu" type="HSplitContainer" parent="HSplitContainer"]
+layout_mode = 2
+
+[node name="Sections" type="VBoxContainer" parent="HSplitContainer/Menu"]
+layout_mode = 2
+
+[node name="Starters" type="Button" parent="HSplitContainer/Menu/Sections"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("1_c8co6")
+theme_override_font_sizes/font_size = 24
+theme_override_styles/normal = SubResource("StyleBoxFlat_myckk")
+text = "Entrantes"
+
+[node name="Meat" type="Button" parent="HSplitContainer/Menu/Sections"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("1_c8co6")
+theme_override_font_sizes/font_size = 24
+theme_override_styles/normal = SubResource("StyleBoxFlat_1xb3f")
+text = "Carnes"
+
+[node name="Fish" type="Button" parent="HSplitContainer/Menu/Sections"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("1_c8co6")
+theme_override_font_sizes/font_size = 24
+theme_override_styles/normal = SubResource("StyleBoxFlat_bnd5r")
+text = "Pescados"
+
+[node name="Desserts" type="Button" parent="HSplitContainer/Menu/Sections"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("1_c8co6")
+theme_override_font_sizes/font_size = 24
+theme_override_styles/normal = SubResource("StyleBoxFlat_djoeh")
+text = "Postres"
+
+[node name="Drinks" type="Button" parent="HSplitContainer/Menu/Sections"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("1_c8co6")
+theme_override_font_sizes/font_size = 24
+theme_override_styles/normal = SubResource("StyleBoxFlat_xx41g")
+text = "Bebidas"

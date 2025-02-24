@@ -6,6 +6,7 @@
 [ext_resource type="FontFile" uid="uid://dhnotjof8qyi" path="res://resources/fonts/Inter/static/Inter_18pt-SemiBold.ttf" id="3_vvqq3"]
 [ext_resource type="Texture2D" uid="uid://b2n5p5ufxtk7g" path="res://resources/add_circle_2.png" id="4_eu6tk"]
 [ext_resource type="Texture2D" uid="uid://dt31c48jxd7ft" path="res://resources/Arrow_down_2.png" id="5_21em6"]
+[ext_resource type="PackedScene" uid="uid://qd5tpgl2irrl" path="res://scenes/calculator.tscn" id="6_t16vj"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_w5x5b"]
 bg_color = Color(0.0431373, 0.184314, 0.337255, 1)
@@ -52,8 +53,6 @@ corner_radius_bottom_left = 10
 expand_margin_left = 15.0
 
 [sub_resource type="Theme" id="Theme_u0dgb"]
-
-[sub_resource type="Theme" id="Theme_81gai"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_wic1w"]
 bg_color = Color(0.607843, 0.607843, 0.607843, 1)
@@ -243,17 +242,13 @@ text = "TPV"
 
 [node name="HSplitContainer" type="HSplitContainer" parent="."]
 layout_mode = 0
-offset_left = 600.0
-offset_top = 160.0
-offset_right = 808.0
-offset_bottom = 1001.0
+offset_top = 140.0
+offset_right = 200.0
+offset_bottom = 981.0
 theme = SubResource("Theme_u0dgb")
+theme_override_constants/separation = 370
 
-[node name="Calculadora" type="VBoxContainer" parent="HSplitContainer"]
-layout_mode = 2
-theme = SubResource("Theme_81gai")
-
-[node name="Button" type="Button" parent="HSplitContainer/Calculadora"]
+[node name="Calculator" parent="HSplitContainer" instance=ExtResource("6_t16vj")]
 layout_mode = 2
 
 [node name="Menu" type="HSplitContainer" parent="HSplitContainer"]

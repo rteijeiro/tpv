@@ -1,0 +1,8 @@
+[gd_resource type="Theme" load_steps=2 format=3 uid="uid://cfua7b52vmq81"]
+
+[ext_resource type="FontFile" uid="uid://dtcswrmhmtn1g" path="res://resources/fonts/Inter/static/Inter_24pt-Light.ttf" id="1_7r62v"]
+
+[resource]
+Label/colors/font_color = Color(0.28485, 0.28485, 0.28485, 1)
+Label/font_sizes/font_size = 24
+Label/fonts/font = ExtResource("1_7r62v")

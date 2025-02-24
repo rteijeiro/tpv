@@ -1,0 +1,11 @@
+[gd_resource type="Theme" load_steps=2 format=3 uid="uid://r6wp7kvp0mwx"]
+
+[ext_resource type="FontFile" uid="uid://dal6uxhenekc3" path="res://resources/fonts/Inter/static/Inter_18pt-Black.ttf" id="1_n2rrt"]
+
+[resource]
+Button/colors/font_color = Color(0, 0, 0, 1)
+Button/font_sizes/font_size = 30
+Button/fonts/font = ExtResource("1_n2rrt")
+Label/colors/font_color = Color(0, 0, 0, 1)
+Label/font_sizes/font_size = 30
+Label/fonts/font = ExtResource("1_n2rrt")

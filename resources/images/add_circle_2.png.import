@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dt31c48jxd7ft"
-path="res://.godot/imported/Arrow_down_2.png-a645f3bc2640df8d2d26f980624c6c70.ctex"
+uid="uid://b2n5p5ufxtk7g"
+path="res://.godot/imported/add_circle_2.png-f81594b852c76901307cbaf026e07af6.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://resources/Arrow_down_2.png"
-dest_files=["res://.godot/imported/Arrow_down_2.png-a645f3bc2640df8d2d26f980624c6c70.ctex"]
+source_file="res://resources/images/add_circle_2.png"
+dest_files=["res://.godot/imported/add_circle_2.png-f81594b852c76901307cbaf026e07af6.ctex"]
 
 [params]
 

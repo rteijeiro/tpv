@@ -1,0 +1,27 @@
+{
+	"Starters": [
+		{ "type": "starter", "name": "Ensalada César", "price": 7.50 },
+		{ "type": "starter", "name": "Croquetas de jamón", "price": 6.00 },
+		{ "type": "starter", "name": "Sopa de marisco", "price": 8.00 }
+	],
+	"Fish": [
+		{ "type": "fish", "name": "Lubina a la plancha", "price": 15.00 },
+		{ "type": "fish", "name": "Salmón al horno", "price": 14.50 },
+		{ "type": "fish", "name": "Merluza en salsa verde", "price": 13.00 }
+	],
+	"Meats": [
+		{ "type": "meat", "name": "Entrecot de ternera", "price": 18.00 },
+		{ "type": "meat", "name": "Chuletas de cordero", "price": 16.50 },
+		{ "type": "meat", "name": "Pollo asado", "price": 12.00 }
+	],
+	"Desserts": [
+		{ "type": "dessert", "name": "Tarta de queso", "price": 5.00 },
+		{ "type": "dessert", "name": "Helado artesanal", "price": 4.50 },
+		{ "type": "dessert", "name": "Flan casero", "price": 4.00 }
+	],
+	"Drinks": [
+		{ "type": "drink", "name": "Agua mineral", "price": 1.50 },
+		{ "type": "drink", "name": "Cerveza", "price": 3.00 },
+		{ "type": "drink", "name": "Vino tinto", "price": 4.00 }
+	]
+}

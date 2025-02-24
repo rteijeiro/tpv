@@ -89,241 +89,254 @@ layout_mode = 2
 theme = ExtResource("4_n0t3b")
 text = "$"
 
-[node name="GridContainer" type="GridContainer" parent="PanelContainer/MarginContainer/PanelContainer/MarginContainer/VBoxContainer"]
+[node name="VBoxContainer" type="VBoxContainer" parent="PanelContainer/MarginContainer/PanelContainer/MarginContainer/VBoxContainer"]
 layout_mode = 2
-columns = 5
 
-[node name="PanelContainer" type="PanelContainer" parent="PanelContainer/MarginContainer/PanelContainer/MarginContainer/VBoxContainer/GridContainer"]
+[node name="HBoxContainer" type="HBoxContainer" parent="PanelContainer/MarginContainer/PanelContainer/MarginContainer/VBoxContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="PanelContainer" type="PanelContainer" parent="PanelContainer/MarginContainer/PanelContainer/MarginContainer/VBoxContainer/VBoxContainer/HBoxContainer"]
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
 theme = ExtResource("1_31te4")
 
-[node name="Uno" type="Button" parent="PanelContainer/MarginContainer/PanelContainer/MarginContainer/VBoxContainer/GridContainer/PanelContainer"]
+[node name="Uno" type="Button" parent="PanelContainer/MarginContainer/PanelContainer/MarginContainer/VBoxContainer/VBoxContainer/HBoxContainer/PanelContainer"]
 layout_mode = 2
 theme = ExtResource("4_n0t3b")
 text = "1"
 flat = true
 
-[node name="PanelContainer2" type="PanelContainer" parent="PanelContainer/MarginContainer/PanelContainer/MarginContainer/VBoxContainer/GridContainer"]
+[node name="PanelContainer2" type="PanelContainer" parent="PanelContainer/MarginContainer/PanelContainer/MarginContainer/VBoxContainer/VBoxContainer/HBoxContainer"]
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
 theme = ExtResource("1_31te4")
 
-[node name="Dos" type="Button" parent="PanelContainer/MarginContainer/PanelContainer/MarginContainer/VBoxContainer/GridContainer/PanelContainer2"]
+[node name="Dos" type="Button" parent="PanelContainer/MarginContainer/PanelContainer/MarginContainer/VBoxContainer/VBoxContainer/HBoxContainer/PanelContainer2"]
 layout_mode = 2
 theme = ExtResource("4_n0t3b")
 text = "2"
 flat = true
 
-[node name="PanelContainer5" type="PanelContainer" parent="PanelContainer/MarginContainer/PanelContainer/MarginContainer/VBoxContainer/GridContainer"]
+[node name="PanelContainer5" type="PanelContainer" parent="PanelContainer/MarginContainer/PanelContainer/MarginContainer/VBoxContainer/VBoxContainer/HBoxContainer"]
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
 theme = ExtResource("1_31te4")
 
-[node name="Tres" type="Button" parent="PanelContainer/MarginContainer/PanelContainer/MarginContainer/VBoxContainer/GridContainer/PanelContainer5"]
+[node name="Tres" type="Button" parent="PanelContainer/MarginContainer/PanelContainer/MarginContainer/VBoxContainer/VBoxContainer/HBoxContainer/PanelContainer5"]
 layout_mode = 2
 theme = ExtResource("4_n0t3b")
 text = "3"
 flat = true
 
-[node name="PanelContainer11" type="PanelContainer" parent="PanelContainer/MarginContainer/PanelContainer/MarginContainer/VBoxContainer/GridContainer"]
+[node name="PanelContainer11" type="PanelContainer" parent="PanelContainer/MarginContainer/PanelContainer/MarginContainer/VBoxContainer/VBoxContainer/HBoxContainer"]
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
 theme = ExtResource("1_31te4")
 
-[node name="Suma" type="Button" parent="PanelContainer/MarginContainer/PanelContainer/MarginContainer/VBoxContainer/GridContainer/PanelContainer11"]
+[node name="Suma" type="Button" parent="PanelContainer/MarginContainer/PanelContainer/MarginContainer/VBoxContainer/VBoxContainer/HBoxContainer/PanelContainer11"]
 layout_mode = 2
 theme = ExtResource("4_n0t3b")
 text = "+"
 flat = true
 
-[node name="PanelContainer17" type="PanelContainer" parent="PanelContainer/MarginContainer/PanelContainer/MarginContainer/VBoxContainer/GridContainer"]
+[node name="PanelContainer17" type="PanelContainer" parent="PanelContainer/MarginContainer/PanelContainer/MarginContainer/VBoxContainer/VBoxContainer/HBoxContainer"]
 layout_mode = 2
+size_flags_horizontal = 3
 size_flags_vertical = 3
 size_flags_stretch_ratio = 2.0
 theme = ExtResource("5_oqaqp")
 
-[node name="Resultado" type="Button" parent="PanelContainer/MarginContainer/PanelContainer/MarginContainer/VBoxContainer/GridContainer/PanelContainer17"]
+[node name="Resultado" type="Button" parent="PanelContainer/MarginContainer/PanelContainer/MarginContainer/VBoxContainer/VBoxContainer/HBoxContainer/PanelContainer17"]
 layout_mode = 2
 theme = ExtResource("4_n0t3b")
 text = "="
 flat = true
 
-[node name="PanelContainer4" type="PanelContainer" parent="PanelContainer/MarginContainer/PanelContainer/MarginContainer/VBoxContainer/GridContainer"]
+[node name="HBoxContainer2" type="HBoxContainer" parent="PanelContainer/MarginContainer/PanelContainer/MarginContainer/VBoxContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="PanelContainer4" type="PanelContainer" parent="PanelContainer/MarginContainer/PanelContainer/MarginContainer/VBoxContainer/VBoxContainer/HBoxContainer2"]
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
 theme = ExtResource("1_31te4")
 
-[node name="Cuatro" type="Button" parent="PanelContainer/MarginContainer/PanelContainer/MarginContainer/VBoxContainer/GridContainer/PanelContainer4"]
+[node name="Cuatro" type="Button" parent="PanelContainer/MarginContainer/PanelContainer/MarginContainer/VBoxContainer/VBoxContainer/HBoxContainer2/PanelContainer4"]
 layout_mode = 2
 theme = ExtResource("4_n0t3b")
 text = "4"
 flat = true
 
-[node name="PanelContainer3" type="PanelContainer" parent="PanelContainer/MarginContainer/PanelContainer/MarginContainer/VBoxContainer/GridContainer"]
+[node name="PanelContainer3" type="PanelContainer" parent="PanelContainer/MarginContainer/PanelContainer/MarginContainer/VBoxContainer/VBoxContainer/HBoxContainer2"]
 layout_mode = 2
+size_flags_horizontal = 3
 theme = ExtResource("1_31te4")
 
-[node name="Cinco" type="Button" parent="PanelContainer/MarginContainer/PanelContainer/MarginContainer/VBoxContainer/GridContainer/PanelContainer3"]
+[node name="Cinco" type="Button" parent="PanelContainer/MarginContainer/PanelContainer/MarginContainer/VBoxContainer/VBoxContainer/HBoxContainer2/PanelContainer3"]
 layout_mode = 2
 theme = ExtResource("4_n0t3b")
 text = "5"
 flat = true
 
-[node name="PanelContainer6" type="PanelContainer" parent="PanelContainer/MarginContainer/PanelContainer/MarginContainer/VBoxContainer/GridContainer"]
+[node name="PanelContainer6" type="PanelContainer" parent="PanelContainer/MarginContainer/PanelContainer/MarginContainer/VBoxContainer/VBoxContainer/HBoxContainer2"]
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
 theme = ExtResource("1_31te4")
 
-[node name="Seis" type="Button" parent="PanelContainer/MarginContainer/PanelContainer/MarginContainer/VBoxContainer/GridContainer/PanelContainer6"]
+[node name="Seis" type="Button" parent="PanelContainer/MarginContainer/PanelContainer/MarginContainer/VBoxContainer/VBoxContainer/HBoxContainer2/PanelContainer6"]
 layout_mode = 2
 theme = ExtResource("4_n0t3b")
 text = "6"
 flat = true
 
-[node name="PanelContainer12" type="PanelContainer" parent="PanelContainer/MarginContainer/PanelContainer/MarginContainer/VBoxContainer/GridContainer"]
+[node name="PanelContainer12" type="PanelContainer" parent="PanelContainer/MarginContainer/PanelContainer/MarginContainer/VBoxContainer/VBoxContainer/HBoxContainer2"]
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
 theme = ExtResource("1_31te4")
 
-[node name="Multiplicacion" type="Button" parent="PanelContainer/MarginContainer/PanelContainer/MarginContainer/VBoxContainer/GridContainer/PanelContainer12"]
+[node name="Multiplicacion" type="Button" parent="PanelContainer/MarginContainer/PanelContainer/MarginContainer/VBoxContainer/VBoxContainer/HBoxContainer2/PanelContainer12"]
 layout_mode = 2
 theme = ExtResource("4_n0t3b")
 text = "*"
 flat = true
 
-[node name="PanelContainer13" type="PanelContainer" parent="PanelContainer/MarginContainer/PanelContainer/MarginContainer/VBoxContainer/GridContainer"]
+[node name="PanelContainer13" type="PanelContainer" parent="PanelContainer/MarginContainer/PanelContainer/MarginContainer/VBoxContainer/VBoxContainer/HBoxContainer2"]
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
 theme = ExtResource("1_31te4")
 
-[node name="Resta" type="Button" parent="PanelContainer/MarginContainer/PanelContainer/MarginContainer/VBoxContainer/GridContainer/PanelContainer13"]
+[node name="Resta" type="Button" parent="PanelContainer/MarginContainer/PanelContainer/MarginContainer/VBoxContainer/VBoxContainer/HBoxContainer2/PanelContainer13"]
 layout_mode = 2
 theme = ExtResource("4_n0t3b")
 text = "-"
 flat = true
 
-[node name="PanelContainer7" type="PanelContainer" parent="PanelContainer/MarginContainer/PanelContainer/MarginContainer/VBoxContainer/GridContainer"]
+[node name="HBoxContainer3" type="HBoxContainer" parent="PanelContainer/MarginContainer/PanelContainer/MarginContainer/VBoxContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="PanelContainer7" type="PanelContainer" parent="PanelContainer/MarginContainer/PanelContainer/MarginContainer/VBoxContainer/VBoxContainer/HBoxContainer3"]
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
 theme = ExtResource("1_31te4")
 
-[node name="Siete" type="Button" parent="PanelContainer/MarginContainer/PanelContainer/MarginContainer/VBoxContainer/GridContainer/PanelContainer7"]
+[node name="Siete" type="Button" parent="PanelContainer/MarginContainer/PanelContainer/MarginContainer/VBoxContainer/VBoxContainer/HBoxContainer3/PanelContainer7"]
 layout_mode = 2
 theme = ExtResource("4_n0t3b")
 text = "7"
 flat = true
 
-[node name="PanelContainer8" type="PanelContainer" parent="PanelContainer/MarginContainer/PanelContainer/MarginContainer/VBoxContainer/GridContainer"]
+[node name="PanelContainer8" type="PanelContainer" parent="PanelContainer/MarginContainer/PanelContainer/MarginContainer/VBoxContainer/VBoxContainer/HBoxContainer3"]
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
 theme = ExtResource("1_31te4")
 
-[node name="Ocho" type="Button" parent="PanelContainer/MarginContainer/PanelContainer/MarginContainer/VBoxContainer/GridContainer/PanelContainer8"]
+[node name="Ocho" type="Button" parent="PanelContainer/MarginContainer/PanelContainer/MarginContainer/VBoxContainer/VBoxContainer/HBoxContainer3/PanelContainer8"]
 layout_mode = 2
 theme = ExtResource("4_n0t3b")
 text = "8"
 flat = true
 
-[node name="PanelContainer9" type="PanelContainer" parent="PanelContainer/MarginContainer/PanelContainer/MarginContainer/VBoxContainer/GridContainer"]
+[node name="PanelContainer9" type="PanelContainer" parent="PanelContainer/MarginContainer/PanelContainer/MarginContainer/VBoxContainer/VBoxContainer/HBoxContainer3"]
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
 theme = ExtResource("1_31te4")
 
-[node name="Nueve" type="Button" parent="PanelContainer/MarginContainer/PanelContainer/MarginContainer/VBoxContainer/GridContainer/PanelContainer9"]
+[node name="Nueve" type="Button" parent="PanelContainer/MarginContainer/PanelContainer/MarginContainer/VBoxContainer/VBoxContainer/HBoxContainer3/PanelContainer9"]
 layout_mode = 2
 theme = ExtResource("4_n0t3b")
 text = "9"
 flat = true
 
-[node name="PanelContainer14" type="PanelContainer" parent="PanelContainer/MarginContainer/PanelContainer/MarginContainer/VBoxContainer/GridContainer"]
+[node name="PanelContainer14" type="PanelContainer" parent="PanelContainer/MarginContainer/PanelContainer/MarginContainer/VBoxContainer/VBoxContainer/HBoxContainer3"]
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
 theme = ExtResource("1_31te4")
 
-[node name="Modulo" type="Button" parent="PanelContainer/MarginContainer/PanelContainer/MarginContainer/VBoxContainer/GridContainer/PanelContainer14"]
+[node name="Modulo" type="Button" parent="PanelContainer/MarginContainer/PanelContainer/MarginContainer/VBoxContainer/VBoxContainer/HBoxContainer3/PanelContainer14"]
 layout_mode = 2
 theme = ExtResource("4_n0t3b")
 text = "%"
 flat = true
 
-[node name="PanelContainer18" type="PanelContainer" parent="PanelContainer/MarginContainer/PanelContainer/MarginContainer/VBoxContainer/GridContainer"]
+[node name="PanelContainer18" type="PanelContainer" parent="PanelContainer/MarginContainer/PanelContainer/MarginContainer/VBoxContainer/VBoxContainer/HBoxContainer3"]
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
 size_flags_stretch_ratio = 2.0
 theme = ExtResource("6_jcd2c")
 
-[node name="Delete" type="Button" parent="PanelContainer/MarginContainer/PanelContainer/MarginContainer/VBoxContainer/GridContainer/PanelContainer18"]
+[node name="Delete" type="Button" parent="PanelContainer/MarginContainer/PanelContainer/MarginContainer/VBoxContainer/VBoxContainer/HBoxContainer3/PanelContainer18"]
 layout_mode = 2
 theme = ExtResource("4_n0t3b")
 icon = ExtResource("8_ywcle")
 flat = true
 icon_alignment = 1
 
-[node name="PanelContainer15" type="PanelContainer" parent="PanelContainer/MarginContainer/PanelContainer/MarginContainer/VBoxContainer/GridContainer"]
+[node name="HBoxContainer4" type="HBoxContainer" parent="PanelContainer/MarginContainer/PanelContainer/MarginContainer/VBoxContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="PanelContainer15" type="PanelContainer" parent="PanelContainer/MarginContainer/PanelContainer/MarginContainer/VBoxContainer/VBoxContainer/HBoxContainer4"]
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
 theme = ExtResource("1_31te4")
 
-[node name="Decimal" type="Button" parent="PanelContainer/MarginContainer/PanelContainer/MarginContainer/VBoxContainer/GridContainer/PanelContainer15"]
+[node name="Decimal" type="Button" parent="PanelContainer/MarginContainer/PanelContainer/MarginContainer/VBoxContainer/VBoxContainer/HBoxContainer4/PanelContainer15"]
 layout_mode = 2
 theme = ExtResource("4_n0t3b")
 text = ","
 flat = true
 
-[node name="PanelContainer10" type="PanelContainer" parent="PanelContainer/MarginContainer/PanelContainer/MarginContainer/VBoxContainer/GridContainer"]
+[node name="PanelContainer10" type="PanelContainer" parent="PanelContainer/MarginContainer/PanelContainer/MarginContainer/VBoxContainer/VBoxContainer/HBoxContainer4"]
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
 theme = ExtResource("1_31te4")
 
-[node name="Cero" type="Button" parent="PanelContainer/MarginContainer/PanelContainer/MarginContainer/VBoxContainer/GridContainer/PanelContainer10"]
+[node name="Cero" type="Button" parent="PanelContainer/MarginContainer/PanelContainer/MarginContainer/VBoxContainer/VBoxContainer/HBoxContainer4/PanelContainer10"]
 layout_mode = 2
 theme = ExtResource("4_n0t3b")
 text = "0"
 flat = true
 
-[node name="PanelContainer16" type="PanelContainer" parent="PanelContainer/MarginContainer/PanelContainer/MarginContainer/VBoxContainer/GridContainer"]
+[node name="PanelContainer16" type="PanelContainer" parent="PanelContainer/MarginContainer/PanelContainer/MarginContainer/VBoxContainer/VBoxContainer/HBoxContainer4"]
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
 theme = ExtResource("1_31te4")
 
-[node name="Division" type="Button" parent="PanelContainer/MarginContainer/PanelContainer/MarginContainer/VBoxContainer/GridContainer/PanelContainer16"]
+[node name="Division" type="Button" parent="PanelContainer/MarginContainer/PanelContainer/MarginContainer/VBoxContainer/VBoxContainer/HBoxContainer4/PanelContainer16"]
 layout_mode = 2
 theme = ExtResource("4_n0t3b")
 text = "/"
 flat = true
 
-[connection signal="pressed" from="PanelContainer/MarginContainer/PanelContainer/MarginContainer/VBoxContainer/GridContainer/PanelContainer/Uno" to="." method="_on_uno_pressed"]
-[connection signal="pressed" from="PanelContainer/MarginContainer/PanelContainer/MarginContainer/VBoxContainer/GridContainer/PanelContainer2/Dos" to="." method="_on_dos_pressed"]
-[connection signal="pressed" from="PanelContainer/MarginContainer/PanelContainer/MarginContainer/VBoxContainer/GridContainer/PanelContainer5/Tres" to="." method="_on_tres_pressed"]
-[connection signal="pressed" from="PanelContainer/MarginContainer/PanelContainer/MarginContainer/VBoxContainer/GridContainer/PanelContainer11/Suma" to="." method="_on_suma_pressed"]
-[connection signal="pressed" from="PanelContainer/MarginContainer/PanelContainer/MarginContainer/VBoxContainer/GridContainer/PanelContainer17/Resultado" to="." method="_on_resultado_pressed"]
-[connection signal="pressed" from="PanelContainer/MarginContainer/PanelContainer/MarginContainer/VBoxContainer/GridContainer/PanelContainer4/Cuatro" to="." method="_on_cuatro_pressed"]
-[connection signal="pressed" from="PanelContainer/MarginContainer/PanelContainer/MarginContainer/VBoxContainer/GridContainer/PanelContainer3/Cinco" to="." method="_on_cinco_pressed"]
-[connection signal="pressed" from="PanelContainer/MarginContainer/PanelContainer/MarginContainer/VBoxContainer/GridContainer/PanelContainer6/Seis" to="." method="_on_seis_pressed"]
-[connection signal="pressed" from="PanelContainer/MarginContainer/PanelContainer/MarginContainer/VBoxContainer/GridContainer/PanelContainer12/Multiplicacion" to="." method="_on_multiplicacion_pressed"]
-[connection signal="pressed" from="PanelContainer/MarginContainer/PanelContainer/MarginContainer/VBoxContainer/GridContainer/PanelContainer13/Resta" to="." method="_on_resta_pressed"]
-[connection signal="pressed" from="PanelContainer/MarginContainer/PanelContainer/MarginContainer/VBoxContainer/GridContainer/PanelContainer7/Siete" to="." method="_on_siete_pressed"]
-[connection signal="pressed" from="PanelContainer/MarginContainer/PanelContainer/MarginContainer/VBoxContainer/GridContainer/PanelContainer8/Ocho" to="." method="_on_ocho_pressed"]
-[connection signal="pressed" from="PanelContainer/MarginContainer/PanelContainer/MarginContainer/VBoxContainer/GridContainer/PanelContainer9/Nueve" to="." method="_on_nueve_pressed"]
-[connection signal="pressed" from="PanelContainer/MarginContainer/PanelContainer/MarginContainer/VBoxContainer/GridContainer/PanelContainer14/Modulo" to="." method="_on_modulo_pressed"]
-[connection signal="pressed" from="PanelContainer/MarginContainer/PanelContainer/MarginContainer/VBoxContainer/GridContainer/PanelContainer18/Delete" to="." method="_on_delete_pressed"]
-[connection signal="pressed" from="PanelContainer/MarginContainer/PanelContainer/MarginContainer/VBoxContainer/GridContainer/PanelContainer15/Decimal" to="." method="_on_decimal_pressed"]
-[connection signal="pressed" from="PanelContainer/MarginContainer/PanelContainer/MarginContainer/VBoxContainer/GridContainer/PanelContainer10/Cero" to="." method="_on_cero_pressed"]
-[connection signal="pressed" from="PanelContainer/MarginContainer/PanelContainer/MarginContainer/VBoxContainer/GridContainer/PanelContainer16/Division" to="." method="_on_division_pressed"]
+[connection signal="pressed" from="PanelContainer/MarginContainer/PanelContainer/MarginContainer/VBoxContainer/VBoxContainer/HBoxContainer/PanelContainer/Uno" to="." method="_on_uno_pressed"]
+[connection signal="pressed" from="PanelContainer/MarginContainer/PanelContainer/MarginContainer/VBoxContainer/VBoxContainer/HBoxContainer/PanelContainer2/Dos" to="." method="_on_dos_pressed"]
+[connection signal="pressed" from="PanelContainer/MarginContainer/PanelContainer/MarginContainer/VBoxContainer/VBoxContainer/HBoxContainer/PanelContainer5/Tres" to="." method="_on_tres_pressed"]
+[connection signal="pressed" from="PanelContainer/MarginContainer/PanelContainer/MarginContainer/VBoxContainer/VBoxContainer/HBoxContainer/PanelContainer11/Suma" to="." method="_on_suma_pressed"]
+[connection signal="pressed" from="PanelContainer/MarginContainer/PanelContainer/MarginContainer/VBoxContainer/VBoxContainer/HBoxContainer/PanelContainer17/Resultado" to="." method="_on_resultado_pressed"]
+[connection signal="pressed" from="PanelContainer/MarginContainer/PanelContainer/MarginContainer/VBoxContainer/VBoxContainer/HBoxContainer2/PanelContainer4/Cuatro" to="." method="_on_cuatro_pressed"]
+[connection signal="pressed" from="PanelContainer/MarginContainer/PanelContainer/MarginContainer/VBoxContainer/VBoxContainer/HBoxContainer2/PanelContainer3/Cinco" to="." method="_on_cinco_pressed"]
+[connection signal="pressed" from="PanelContainer/MarginContainer/PanelContainer/MarginContainer/VBoxContainer/VBoxContainer/HBoxContainer2/PanelContainer6/Seis" to="." method="_on_seis_pressed"]
+[connection signal="pressed" from="PanelContainer/MarginContainer/PanelContainer/MarginContainer/VBoxContainer/VBoxContainer/HBoxContainer2/PanelContainer12/Multiplicacion" to="." method="_on_multiplicacion_pressed"]
+[connection signal="pressed" from="PanelContainer/MarginContainer/PanelContainer/MarginContainer/VBoxContainer/VBoxContainer/HBoxContainer2/PanelContainer13/Resta" to="." method="_on_resta_pressed"]
+[connection signal="pressed" from="PanelContainer/MarginContainer/PanelContainer/MarginContainer/VBoxContainer/VBoxContainer/HBoxContainer3/PanelContainer7/Siete" to="." method="_on_siete_pressed"]
+[connection signal="pressed" from="PanelContainer/MarginContainer/PanelContainer/MarginContainer/VBoxContainer/VBoxContainer/HBoxContainer3/PanelContainer8/Ocho" to="." method="_on_ocho_pressed"]
+[connection signal="pressed" from="PanelContainer/MarginContainer/PanelContainer/MarginContainer/VBoxContainer/VBoxContainer/HBoxContainer3/PanelContainer9/Nueve" to="." method="_on_nueve_pressed"]
+[connection signal="pressed" from="PanelContainer/MarginContainer/PanelContainer/MarginContainer/VBoxContainer/VBoxContainer/HBoxContainer3/PanelContainer14/Modulo" to="." method="_on_modulo_pressed"]
+[connection signal="pressed" from="PanelContainer/MarginContainer/PanelContainer/MarginContainer/VBoxContainer/VBoxContainer/HBoxContainer3/PanelContainer18/Delete" to="." method="_on_delete_pressed"]
+[connection signal="pressed" from="PanelContainer/MarginContainer/PanelContainer/MarginContainer/VBoxContainer/VBoxContainer/HBoxContainer4/PanelContainer15/Decimal" to="." method="_on_decimal_pressed"]
+[connection signal="pressed" from="PanelContainer/MarginContainer/PanelContainer/MarginContainer/VBoxContainer/VBoxContainer/HBoxContainer4/PanelContainer10/Cero" to="." method="_on_cero_pressed"]
+[connection signal="pressed" from="PanelContainer/MarginContainer/PanelContainer/MarginContainer/VBoxContainer/VBoxContainer/HBoxContainer4/PanelContainer16/Division" to="." method="_on_division_pressed"]

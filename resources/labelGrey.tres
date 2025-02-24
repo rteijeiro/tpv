@@ -1,7 +1,0 @@
-[gd_resource type="Theme" load_steps=2 format=3 uid="uid://cfua7b52vmq81"]
-
-[ext_resource type="FontFile" uid="uid://4jdr3vvkxcbp" path="res://resources/fonts/Inter/static/Inter_18pt-Bold.ttf" id="1_5q7oy"]
-
-[resource]
-Label/colors/font_color = Color(0.28485, 0.28485, 0.28485, 1)
-Label/fonts/font = ExtResource("1_5q7oy")

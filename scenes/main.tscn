@@ -1,4 +1,4 @@
-[gd_scene load_steps=30 format=3 uid="uid://uhirk4j0bkkb"]
+[gd_scene load_steps=33 format=3 uid="uid://uhirk4j0bkkb"]
 
 [ext_resource type="Texture2D" uid="uid://g2kwa7mhnktq" path="res://resources/images/logo_white.png" id="1_07ek5"]
 [ext_resource type="FontFile" uid="uid://iund57xk6mri" path="res://resources/fonts/Inter/static/Inter_18pt-Regular.ttf" id="1_c8co6"]
@@ -7,6 +7,9 @@
 [ext_resource type="Texture2D" uid="uid://b2n5p5ufxtk7g" path="res://resources/images/add_circle_2.png" id="4_eu6tk"]
 [ext_resource type="Texture2D" uid="uid://dt31c48jxd7ft" path="res://resources/images/Arrow_down_2.png" id="5_21em6"]
 [ext_resource type="PackedScene" uid="uid://qd5tpgl2irrl" path="res://scenes/calculator.tscn" id="6_t16vj"]
+[ext_resource type="Theme" uid="uid://dxg4j6hfoj3dt" path="res://resources/themes/Panel1.tres" id="8_17kq6"]
+[ext_resource type="Theme" uid="uid://deqsyowfnldyp" path="res://resources/themes/pinkTheme.tres" id="9_kbv7k"]
+[ext_resource type="Theme" uid="uid://defw6ujt7vp0k" path="res://resources/themes/labelBlank.tres" id="10_xapd7"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_w5x5b"]
 bg_color = Color(0.0431373, 0.184314, 0.337255, 1)
@@ -245,7 +248,7 @@ text = "TPV"
 layout_mode = 0
 offset_left = 25.0
 offset_top = 160.0
-offset_right = 738.0
+offset_right = 1408.0
 offset_bottom = 1001.0
 theme = SubResource("Theme_u0dgb")
 theme_override_constants/separation = 515
@@ -333,3 +336,43 @@ theme_override_styles/hover = SubResource("StyleBoxFlat_8hro5")
 theme_override_styles/pressed = SubResource("StyleBoxFlat_j54k4")
 theme_override_styles/normal = SubResource("StyleBoxFlat_xx41g")
 text = "Bebidas"
+
+[node name="PanelContainer" type="PanelContainer" parent="HSplitContainer/Menu"]
+layout_mode = 2
+theme = ExtResource("8_17kq6")
+
+[node name="MarginContainer" type="MarginContainer" parent="HSplitContainer/Menu/PanelContainer"]
+layout_mode = 2
+theme_override_constants/margin_left = 10
+theme_override_constants/margin_top = 10
+theme_override_constants/margin_right = 10
+theme_override_constants/margin_bottom = 10
+
+[node name="GridContainer" type="GridContainer" parent="HSplitContainer/Menu/PanelContainer/MarginContainer"]
+layout_mode = 2
+columns = 2
+
+[node name="PanelContainer" type="PanelContainer" parent="HSplitContainer/Menu/PanelContainer/MarginContainer/GridContainer"]
+layout_mode = 2
+theme = ExtResource("9_kbv7k")
+
+[node name="MarginContainer" type="MarginContainer" parent="HSplitContainer/Menu/PanelContainer/MarginContainer/GridContainer/PanelContainer"]
+layout_mode = 2
+theme_override_constants/margin_left = 10
+theme_override_constants/margin_top = 10
+theme_override_constants/margin_right = 10
+theme_override_constants/margin_bottom = 10
+
+[node name="Label" type="Label" parent="HSplitContainer/Menu/PanelContainer/MarginContainer/GridContainer/PanelContainer/MarginContainer"]
+layout_mode = 2
+theme = ExtResource("10_xapd7")
+text = "Coca-Cola"
+
+[node name="PanelContainer2" type="PanelContainer" parent="HSplitContainer/Menu/PanelContainer/MarginContainer/GridContainer"]
+layout_mode = 2
+
+[node name="MarginContainer" type="MarginContainer" parent="HSplitContainer/Menu/PanelContainer/MarginContainer/GridContainer/PanelContainer2"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="HSplitContainer/Menu/PanelContainer/MarginContainer/GridContainer/PanelContainer2/MarginContainer"]
+layout_mode = 2

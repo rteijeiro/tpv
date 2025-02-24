@@ -1,4 +1,4 @@
-[gd_scene load_steps=10 format=3 uid="uid://qd5tpgl2irrl"]
+[gd_scene load_steps=11 format=3 uid="uid://qd5tpgl2irrl"]
 
 [ext_resource type="Theme" uid="uid://dxg4j6hfoj3dt" path="res://resources/themes/Panel1.tres" id="1_31te4"]
 [ext_resource type="Script" path="res://Scripts/calculator.gd" id="1_ro82a"]
@@ -7,6 +7,7 @@
 [ext_resource type="Theme" uid="uid://r6wp7kvp0mwx" path="res://resources/themes/labelBlack.tres" id="4_n0t3b"]
 [ext_resource type="Theme" uid="uid://cps3nhy3hktjg" path="res://resources/themes/panelGreen.tres" id="5_oqaqp"]
 [ext_resource type="Theme" uid="uid://dt5i4g751q0rg" path="res://resources/themes/panelOrange.tres" id="6_jcd2c"]
+[ext_resource type="Texture2D" uid="uid://u522kr3pd3lq" path="res://resources/images/Delete.png" id="8_ywcle"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_hbh88"]
 bg_color = Color(1, 1, 1, 1)
@@ -265,11 +266,12 @@ size_flags_vertical = 3
 size_flags_stretch_ratio = 2.0
 theme = ExtResource("6_jcd2c")
 
-[node name="<_" type="Button" parent="PanelContainer/MarginContainer/PanelContainer/MarginContainer/VBoxContainer/GridContainer/PanelContainer18"]
+[node name="Delete" type="Button" parent="PanelContainer/MarginContainer/PanelContainer/MarginContainer/VBoxContainer/GridContainer/PanelContainer18"]
 layout_mode = 2
 theme = ExtResource("4_n0t3b")
-text = "<_"
+icon = ExtResource("8_ywcle")
 flat = true
+icon_alignment = 1
 
 [node name="PanelContainer15" type="PanelContainer" parent="PanelContainer/MarginContainer/PanelContainer/MarginContainer/VBoxContainer/GridContainer"]
 layout_mode = 2
@@ -321,6 +323,7 @@ flat = true
 [connection signal="pressed" from="PanelContainer/MarginContainer/PanelContainer/MarginContainer/VBoxContainer/GridContainer/PanelContainer8/Ocho" to="." method="_on_ocho_pressed"]
 [connection signal="pressed" from="PanelContainer/MarginContainer/PanelContainer/MarginContainer/VBoxContainer/GridContainer/PanelContainer9/Nueve" to="." method="_on_nueve_pressed"]
 [connection signal="pressed" from="PanelContainer/MarginContainer/PanelContainer/MarginContainer/VBoxContainer/GridContainer/PanelContainer14/Modulo" to="." method="_on_modulo_pressed"]
+[connection signal="pressed" from="PanelContainer/MarginContainer/PanelContainer/MarginContainer/VBoxContainer/GridContainer/PanelContainer18/Delete" to="." method="_on_delete_pressed"]
 [connection signal="pressed" from="PanelContainer/MarginContainer/PanelContainer/MarginContainer/VBoxContainer/GridContainer/PanelContainer15/Decimal" to="." method="_on_decimal_pressed"]
 [connection signal="pressed" from="PanelContainer/MarginContainer/PanelContainer/MarginContainer/VBoxContainer/GridContainer/PanelContainer10/Cero" to="." method="_on_cero_pressed"]
 [connection signal="pressed" from="PanelContainer/MarginContainer/PanelContainer/MarginContainer/VBoxContainer/GridContainer/PanelContainer16/Division" to="." method="_on_division_pressed"]

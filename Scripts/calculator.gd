@@ -19,10 +19,7 @@ func _on_tres_pressed() -> void:
 	selectNumber('3')
 
 func _on_suma_pressed() -> void:
-	res = int(input)
-	input = ''
-	operation = '+'
-	price.text = input
+	selectOperation('+')
 
 func _on_resultado_pressed() -> void:
 	if operation == '+':
@@ -50,14 +47,10 @@ func _on_seis_pressed() -> void:
 	selectNumber('6')
 
 func _on_multiplicacion_pressed() -> void:
-	res = float(input)
-	input = ''
-	operation = '*'
-	price.text = input
+	selectOperation('*')
 
 func _on_siete_pressed() -> void:
 	selectNumber('7')
-
 
 func _on_ocho_pressed() -> void:
 	selectNumber('8')
@@ -67,30 +60,30 @@ func _on_nueve_pressed() -> void:
 	price.text = input
 
 func _on_resta_pressed() -> void:
-	res = float(input)
-	input = ''
-	operation = '-'
-	price.text = input
+	selectOperation('-')
 
 func _on_modulo_pressed() -> void:
-	res = float(input)
-	input = ''
-	operation = '%'
-	price.text = input
+	selectOperation('%')
 
 func _on_cero_pressed() -> void:
 	selectNumber('0')
 
 func _on_division_pressed() -> void:
-	res = float(input)
-	input = ''
-	operation = '/'
-	price.text = input
+	selectOperation('/')
 
 func _on_decimal_pressed() -> void:
-	input += '.'
-	price.text = input
+	selectNumber('.')
 
 func selectNumber(number):
 	input += number
+	price.text = input
+
+func selectOperation(element):
+	res = float(input)
+	input = ''
+	operation = element
+	price.text = input
+
+func _on_delete_pressed() -> void:
+	input[-1] = ''
 	price.text = input

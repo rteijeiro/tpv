@@ -13,6 +13,11 @@ corner_radius_bottom_left = 10
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ro85a"]
 content_margin_bottom = 100.0
+bg_color = Color(0.622003, 0.17329, 0.113786, 1)
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_dh5gh"]
 content_margin_bottom = 100.0
@@ -27,6 +32,11 @@ corner_radius_bottom_left = 10
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_owi3r"]
 content_margin_bottom = 100.0
+bg_color = Color(0.031553, 0.353366, 0.317664, 1)
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_f8ram"]
 content_margin_bottom = 100.0
@@ -41,6 +51,11 @@ corner_radius_bottom_left = 10
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_gixk5"]
 content_margin_bottom = 100.0
+bg_color = Color(0.233235, 0.548305, 0.348098, 1)
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_v82iv"]
 content_margin_bottom = 100.0
@@ -55,6 +70,11 @@ corner_radius_bottom_left = 10
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_agdyv"]
 content_margin_bottom = 100.0
+bg_color = Color(0.67539, 0.310207, 0.0993809, 1)
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_aap6v"]
 content_margin_bottom = 100.0
@@ -69,6 +89,11 @@ corner_radius_bottom_left = 10
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_8hro5"]
 content_margin_bottom = 100.0
+bg_color = Color(0.626474, 0.271097, 0.498522, 1)
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_j54k4"]
 content_margin_bottom = 100.0

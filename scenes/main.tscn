@@ -1,6 +1,55 @@
-[gd_scene load_steps=20 format=3 uid="uid://uhirk4j0bkkb"]
+[gd_scene load_steps=30 format=3 uid="uid://uhirk4j0bkkb"]
 
+[ext_resource type="Texture2D" uid="uid://g2kwa7mhnktq" path="res://resources/logo_white.png" id="1_07ek5"]
 [ext_resource type="FontFile" uid="uid://iund57xk6mri" path="res://resources/fonts/Inter/static/Inter_18pt-Regular.ttf" id="1_c8co6"]
+[ext_resource type="FontFile" uid="uid://dal6uxhenekc3" path="res://resources/fonts/Inter/static/Inter_18pt-Black.ttf" id="2_gohky"]
+[ext_resource type="FontFile" uid="uid://dhnotjof8qyi" path="res://resources/fonts/Inter/static/Inter_18pt-SemiBold.ttf" id="3_vvqq3"]
+[ext_resource type="Texture2D" uid="uid://b2n5p5ufxtk7g" path="res://resources/add_circle_2.png" id="4_eu6tk"]
+[ext_resource type="Texture2D" uid="uid://dt31c48jxd7ft" path="res://resources/Arrow_down_2.png" id="5_21em6"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_w5x5b"]
+bg_color = Color(0.0431373, 0.184314, 0.337255, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_l0sej"]
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+expand_margin_left = 15.0
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_wvsei"]
+bg_color = Color(1, 1, 1, 1)
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+expand_margin_left = 15.0
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_q04fp"]
+bg_color = Color(0.0431373, 0.109804, 0.211765, 1)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(1, 1, 1, 1)
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+expand_margin_left = 15.0
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_353as"]
+bg_color = Color(0.6, 0.6, 0.6, 0)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(1, 1, 1, 1)
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+expand_margin_left = 15.0
 
 [sub_resource type="Theme" id="Theme_u0dgb"]
 
@@ -113,6 +162,84 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+
+[node name="ColorRect" type="ColorRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Header" type="Panel" parent="."]
+layout_mode = 1
+anchors_preset = 10
+anchor_right = 1.0
+offset_bottom = 122.0
+grow_horizontal = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_w5x5b")
+
+[node name="Logo" type="TextureRect" parent="Header"]
+layout_mode = 2
+offset_left = 21.0
+offset_top = 8.0
+offset_right = 126.0
+offset_bottom = 113.0
+texture = ExtResource("1_07ek5")
+
+[node name="Tap&Go" type="Label" parent="Header"]
+layout_mode = 2
+offset_left = 148.0
+offset_top = 37.0
+offset_right = 304.0
+offset_bottom = 86.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("2_gohky")
+theme_override_font_sizes/font_size = 40
+text = "Tap&Go"
+
+[node name="Add" type="Button" parent="Header"]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -215.0
+offset_top = 39.0
+offset_right = 91.0
+offset_bottom = 91.0
+grow_horizontal = 2
+theme_override_colors/font_color = Color(0.0431373, 0.184314, 0.337255, 1)
+theme_override_fonts/font = ExtResource("3_vvqq3")
+theme_override_font_sizes/font_size = 24
+theme_override_styles/hover = SubResource("StyleBoxFlat_l0sej")
+theme_override_styles/normal = SubResource("StyleBoxFlat_wvsei")
+text = "Añadir producto"
+icon = ExtResource("4_eu6tk")
+
+[node name="Table" type="Button" parent="Header"]
+layout_mode = 0
+offset_left = 841.0
+offset_top = 39.0
+offset_right = 1147.0
+offset_bottom = 91.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("3_vvqq3")
+theme_override_font_sizes/font_size = 24
+theme_override_styles/hover = SubResource("StyleBoxFlat_q04fp")
+theme_override_styles/normal = SubResource("StyleBoxFlat_353as")
+text = "Seleccionar mesa"
+icon = ExtResource("5_21em6")
+
+[node name="TPV" type="Label" parent="Header"]
+layout_mode = 0
+offset_left = 1314.0
+offset_top = 37.0
+offset_right = 1399.0
+offset_bottom = 86.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("2_gohky")
+theme_override_font_sizes/font_size = 40
+text = "TPV"
 
 [node name="HSplitContainer" type="HSplitContainer" parent="."]
 layout_mode = 0

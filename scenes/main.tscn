@@ -1,4 +1,4 @@
-[gd_scene load_steps=9 format=3 uid="uid://uhirk4j0bkkb"]
+[gd_scene load_steps=20 format=3 uid="uid://uhirk4j0bkkb"]
 
 [ext_resource type="FontFile" uid="uid://iund57xk6mri" path="res://resources/fonts/Inter/static/Inter_18pt-Regular.ttf" id="1_c8co6"]
 
@@ -6,20 +6,80 @@
 
 [sub_resource type="Theme" id="Theme_81gai"]
 
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_myckk"]
-bg_color = Color(1, 0.317647, 0.317647, 1)
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_wic1w"]
+bg_color = Color(0.607843, 0.607843, 0.607843, 1)
+corner_radius_top_left = 10
+corner_radius_bottom_left = 10
 
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_1xb3f"]
-bg_color = Color(0, 1, 0.301961, 1)
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ro85a"]
+content_margin_bottom = 100.0
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_dh5gh"]
+content_margin_bottom = 100.0
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_myckk"]
+content_margin_bottom = 100.0
+bg_color = Color(1, 0.317647, 0.317647, 1)
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_owi3r"]
+content_margin_bottom = 100.0
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_f8ram"]
+content_margin_bottom = 100.0
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_bnd5r"]
+content_margin_bottom = 100.0
 bg_color = Color(0, 0.572549, 0.545098, 1)
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_gixk5"]
+content_margin_bottom = 100.0
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_v82iv"]
+content_margin_bottom = 100.0
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_1xb3f"]
+content_margin_bottom = 100.0
+bg_color = Color(0, 1, 0.301961, 1)
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_agdyv"]
+content_margin_bottom = 100.0
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_aap6v"]
+content_margin_bottom = 100.0
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_djoeh"]
+content_margin_bottom = 100.0
 bg_color = Color(0.890196, 0.415686, 0, 1)
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_8hro5"]
+content_margin_bottom = 100.0
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_j54k4"]
+content_margin_bottom = 100.0
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_xx41g"]
+content_margin_bottom = 100.0
 bg_color = Color(0.992157, 0.219608, 0.631373, 1)
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
 
 [node name="Main" type="Control"]
 layout_mode = 3
@@ -31,8 +91,10 @@ grow_vertical = 2
 
 [node name="HSplitContainer" type="HSplitContainer" parent="."]
 layout_mode = 0
-offset_right = 40.0
-offset_bottom = 40.0
+offset_left = 600.0
+offset_top = 160.0
+offset_right = 808.0
+offset_bottom = 1001.0
 theme = SubResource("Theme_u0dgb")
 
 [node name="Calculadora" type="VBoxContainer" parent="HSplitContainer"]
@@ -45,40 +107,80 @@ layout_mode = 2
 [node name="Menu" type="HSplitContainer" parent="HSplitContainer"]
 layout_mode = 2
 
-[node name="Sections" type="VBoxContainer" parent="HSplitContainer/Menu"]
+[node name="Panel" type="Panel" parent="HSplitContainer/Menu"]
+custom_minimum_size = Vector2(188, 841)
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_wic1w")
+
+[node name="Sections" type="VBoxContainer" parent="HSplitContainer/Menu/Panel"]
+layout_mode = 2
+offset_left = 23.0
+offset_top = 20.0
+offset_right = 165.0
+offset_bottom = 786.0
+theme_override_constants/separation = 13
+
+[node name="Margin_Starters" type="MarginContainer" parent="HSplitContainer/Menu/Panel/Sections"]
+custom_minimum_size = Vector2(142, 150)
 layout_mode = 2
 
-[node name="Starters" type="Button" parent="HSplitContainer/Menu/Sections"]
+[node name="Starters" type="Button" parent="HSplitContainer/Menu/Panel/Sections/Margin_Starters"]
 layout_mode = 2
 theme_override_fonts/font = ExtResource("1_c8co6")
 theme_override_font_sizes/font_size = 24
+theme_override_styles/hover = SubResource("StyleBoxFlat_ro85a")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_dh5gh")
 theme_override_styles/normal = SubResource("StyleBoxFlat_myckk")
 text = "Entrantes"
 
-[node name="Meat" type="Button" parent="HSplitContainer/Menu/Sections"]
+[node name="Margin_Fish" type="MarginContainer" parent="HSplitContainer/Menu/Panel/Sections"]
+custom_minimum_size = Vector2(142, 150)
 layout_mode = 2
-theme_override_fonts/font = ExtResource("1_c8co6")
-theme_override_font_sizes/font_size = 24
-theme_override_styles/normal = SubResource("StyleBoxFlat_1xb3f")
-text = "Carnes"
 
-[node name="Fish" type="Button" parent="HSplitContainer/Menu/Sections"]
+[node name="Fish" type="Button" parent="HSplitContainer/Menu/Panel/Sections/Margin_Fish"]
 layout_mode = 2
 theme_override_fonts/font = ExtResource("1_c8co6")
 theme_override_font_sizes/font_size = 24
+theme_override_styles/hover = SubResource("StyleBoxFlat_owi3r")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_f8ram")
 theme_override_styles/normal = SubResource("StyleBoxFlat_bnd5r")
 text = "Pescados"
 
-[node name="Desserts" type="Button" parent="HSplitContainer/Menu/Sections"]
+[node name="Margin_Meat" type="MarginContainer" parent="HSplitContainer/Menu/Panel/Sections"]
+custom_minimum_size = Vector2(142, 150)
+layout_mode = 2
+
+[node name="Meat" type="Button" parent="HSplitContainer/Menu/Panel/Sections/Margin_Meat"]
 layout_mode = 2
 theme_override_fonts/font = ExtResource("1_c8co6")
 theme_override_font_sizes/font_size = 24
+theme_override_styles/hover = SubResource("StyleBoxFlat_gixk5")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_v82iv")
+theme_override_styles/normal = SubResource("StyleBoxFlat_1xb3f")
+text = "Carnes"
+
+[node name="Margin_Desserts" type="MarginContainer" parent="HSplitContainer/Menu/Panel/Sections"]
+custom_minimum_size = Vector2(142, 150)
+layout_mode = 2
+
+[node name="Desserts" type="Button" parent="HSplitContainer/Menu/Panel/Sections/Margin_Desserts"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("1_c8co6")
+theme_override_font_sizes/font_size = 24
+theme_override_styles/hover = SubResource("StyleBoxFlat_agdyv")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_aap6v")
 theme_override_styles/normal = SubResource("StyleBoxFlat_djoeh")
 text = "Postres"
 
-[node name="Drinks" type="Button" parent="HSplitContainer/Menu/Sections"]
+[node name="Margin_Drink" type="MarginContainer" parent="HSplitContainer/Menu/Panel/Sections"]
+custom_minimum_size = Vector2(142, 150)
+layout_mode = 2
+
+[node name="Drinks" type="Button" parent="HSplitContainer/Menu/Panel/Sections/Margin_Drink"]
 layout_mode = 2
 theme_override_fonts/font = ExtResource("1_c8co6")
 theme_override_font_sizes/font_size = 24
+theme_override_styles/hover = SubResource("StyleBoxFlat_8hro5")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_j54k4")
 theme_override_styles/normal = SubResource("StyleBoxFlat_xx41g")
 text = "Bebidas"

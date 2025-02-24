@@ -179,11 +179,12 @@ grow_horizontal = 2
 theme_override_styles/panel = SubResource("StyleBoxFlat_w5x5b")
 
 [node name="Logo" type="TextureRect" parent="Header"]
-layout_mode = 2
-offset_left = 21.0
-offset_top = 8.0
-offset_right = 126.0
-offset_bottom = 113.0
+layout_mode = 1
+offset_left = 37.0
+offset_top = 24.0
+offset_right = 130.0
+offset_bottom = 121.0
+scale = Vector2(0.8, 0.8)
 texture = ExtResource("1_07ek5")
 
 [node name="Tap&Go" type="Label" parent="Header"]

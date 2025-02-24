@@ -1,4 +1,4 @@
-[gd_scene load_steps=10 format=3 uid="uid://qd5tpgl2irrl"]
+[gd_scene load_steps=9 format=3 uid="uid://qd5tpgl2irrl"]
 
 [ext_resource type="Theme" uid="uid://dxg4j6hfoj3dt" path="res://resources/Panel1.tres" id="1_31te4"]
 [ext_resource type="Script" path="res://Scripts/calculator.gd" id="1_ro82a"]
@@ -6,7 +6,6 @@
 [ext_resource type="Theme" uid="uid://cfua7b52vmq81" path="res://resources/labelGrey.tres" id="3_v6kyr"]
 [ext_resource type="Theme" uid="uid://r6wp7kvp0mwx" path="res://resources/labelBlack.tres" id="4_n0t3b"]
 [ext_resource type="Theme" uid="uid://cps3nhy3hktjg" path="res://resources/panelGreen.tres" id="5_oqaqp"]
-[ext_resource type="Theme" uid="uid://dt5i4g751q0rg" path="res://resources/panelOrange.tres" id="6_jcd2c"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_hbh88"]
 bg_color = Color(1, 1, 1, 1)
@@ -250,7 +249,6 @@ layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
 size_flags_stretch_ratio = 2.0
-theme = ExtResource("6_jcd2c")
 
 [node name="<_" type="Button" parent="PanelContainer/MarginContainer/PanelContainer/MarginContainer/VBoxContainer/GridContainer/PanelContainer18"]
 layout_mode = 2

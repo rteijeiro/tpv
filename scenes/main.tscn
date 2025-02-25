@@ -1,4 +1,4 @@
-[gd_scene load_steps=33 format=3 uid="uid://uhirk4j0bkkb"]
+[gd_scene load_steps=34 format=3 uid="uid://uhirk4j0bkkb"]
 
 [ext_resource type="Texture2D" uid="uid://g2kwa7mhnktq" path="res://resources/images/logo_white.png" id="1_07ek5"]
 [ext_resource type="FontFile" uid="uid://iund57xk6mri" path="res://resources/fonts/Inter/static/Inter_18pt-Regular.ttf" id="1_c8co6"]
@@ -10,6 +10,7 @@
 [ext_resource type="Theme" uid="uid://dxg4j6hfoj3dt" path="res://resources/themes/Panel1.tres" id="8_17kq6"]
 [ext_resource type="Theme" uid="uid://deqsyowfnldyp" path="res://resources/themes/pinkTheme.tres" id="9_kbv7k"]
 [ext_resource type="Theme" uid="uid://defw6ujt7vp0k" path="res://resources/themes/labelBlank.tres" id="10_xapd7"]
+[ext_resource type="Theme" uid="uid://dt5i4g751q0rg" path="res://resources/themes/panelOrange.tres" id="11_i1pyg"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_w5x5b"]
 bg_color = Color(0.0431373, 0.184314, 0.337255, 1)
@@ -348,31 +349,104 @@ theme_override_constants/margin_top = 10
 theme_override_constants/margin_right = 10
 theme_override_constants/margin_bottom = 10
 
-[node name="GridContainer" type="GridContainer" parent="HSplitContainer/Menu/PanelContainer/MarginContainer"]
+[node name="Drinks" type="GridContainer" parent="HSplitContainer/Menu/PanelContainer/MarginContainer"]
 layout_mode = 2
+theme_override_constants/h_separation = 20
+theme_override_constants/v_separation = 20
 columns = 2
 
-[node name="PanelContainer" type="PanelContainer" parent="HSplitContainer/Menu/PanelContainer/MarginContainer/GridContainer"]
+[node name="PanelContainer" type="PanelContainer" parent="HSplitContainer/Menu/PanelContainer/MarginContainer/Drinks"]
 layout_mode = 2
+size_flags_horizontal = 3
 theme = ExtResource("9_kbv7k")
 
-[node name="MarginContainer" type="MarginContainer" parent="HSplitContainer/Menu/PanelContainer/MarginContainer/GridContainer/PanelContainer"]
+[node name="MarginContainer" type="MarginContainer" parent="HSplitContainer/Menu/PanelContainer/MarginContainer/Drinks/PanelContainer"]
 layout_mode = 2
-theme_override_constants/margin_left = 10
+theme_override_constants/margin_left = 15
 theme_override_constants/margin_top = 10
 theme_override_constants/margin_right = 10
-theme_override_constants/margin_bottom = 10
+theme_override_constants/margin_bottom = 50
 
-[node name="Label" type="Label" parent="HSplitContainer/Menu/PanelContainer/MarginContainer/GridContainer/PanelContainer/MarginContainer"]
+[node name="Coca-Cola" type="Label" parent="HSplitContainer/Menu/PanelContainer/MarginContainer/Drinks/PanelContainer/MarginContainer"]
 layout_mode = 2
+size_flags_vertical = 1
 theme = ExtResource("10_xapd7")
 text = "Coca-Cola"
 
-[node name="PanelContainer2" type="PanelContainer" parent="HSplitContainer/Menu/PanelContainer/MarginContainer/GridContainer"]
+[node name="PanelContainer2" type="PanelContainer" parent="HSplitContainer/Menu/PanelContainer/MarginContainer/Drinks"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme = ExtResource("9_kbv7k")
+
+[node name="MarginContainer" type="MarginContainer" parent="HSplitContainer/Menu/PanelContainer/MarginContainer/Drinks/PanelContainer2"]
+layout_mode = 2
+theme_override_constants/margin_left = 15
+theme_override_constants/margin_top = 10
+theme_override_constants/margin_right = 10
+theme_override_constants/margin_bottom = 50
+
+[node name="Kas_Naranja" type="Label" parent="HSplitContainer/Menu/PanelContainer/MarginContainer/Drinks/PanelContainer2/MarginContainer"]
+layout_mode = 2
+theme = ExtResource("10_xapd7")
+text = "Kas Naranja"
+
+[node name="PanelContainer3" type="PanelContainer" parent="HSplitContainer/Menu/PanelContainer/MarginContainer/Drinks"]
+layout_mode = 2
+theme = ExtResource("9_kbv7k")
+
+[node name="MarginContainer" type="MarginContainer" parent="HSplitContainer/Menu/PanelContainer/MarginContainer/Drinks/PanelContainer3"]
+layout_mode = 2
+theme_override_constants/margin_left = 15
+theme_override_constants/margin_top = 5
+theme_override_constants/margin_right = 5
+theme_override_constants/margin_bottom = 50
+
+[node name="Nestea" type="Label" parent="HSplitContainer/Menu/PanelContainer/MarginContainer/Drinks/PanelContainer3/MarginContainer"]
+layout_mode = 2
+theme = ExtResource("10_xapd7")
+text = "Nestea"
+
+[node name="PanelContainer4" type="PanelContainer" parent="HSplitContainer/Menu/PanelContainer/MarginContainer/Drinks"]
+layout_mode = 2
+theme = ExtResource("9_kbv7k")
+
+[node name="MarginContainer" type="MarginContainer" parent="HSplitContainer/Menu/PanelContainer/MarginContainer/Drinks/PanelContainer4"]
+layout_mode = 2
+theme_override_constants/margin_left = 15
+theme_override_constants/margin_top = 5
+theme_override_constants/margin_right = 5
+theme_override_constants/margin_bottom = 50
+
+[node name="Agua_Font_natura" type="Label" parent="HSplitContainer/Menu/PanelContainer/MarginContainer/Drinks/PanelContainer4/MarginContainer"]
+layout_mode = 2
+theme = ExtResource("10_xapd7")
+text = "Agua Font natura"
+
+[node name="PanelContainer5" type="PanelContainer" parent="HSplitContainer/Menu/PanelContainer/MarginContainer/Drinks"]
+layout_mode = 2
+theme = ExtResource("9_kbv7k")
+
+[node name="MarginContainer" type="MarginContainer" parent="HSplitContainer/Menu/PanelContainer/MarginContainer/Drinks/PanelContainer5"]
+layout_mode = 2
+theme_override_constants/margin_left = 15
+theme_override_constants/margin_top = 5
+theme_override_constants/margin_right = 5
+theme_override_constants/margin_bottom = 50
+
+[node name="Cerveza_San_Miguel" type="Label" parent="HSplitContainer/Menu/PanelContainer/MarginContainer/Drinks/PanelContainer5/MarginContainer"]
+layout_mode = 2
+theme = ExtResource("10_xapd7")
+text = "Cerveza San Miguel"
+
+[node name="GridContainer2" type="GridContainer" parent="HSplitContainer/Menu/PanelContainer/MarginContainer"]
 layout_mode = 2
 
-[node name="MarginContainer" type="MarginContainer" parent="HSplitContainer/Menu/PanelContainer/MarginContainer/GridContainer/PanelContainer2"]
+[node name="PanelContainer" type="PanelContainer" parent="HSplitContainer/Menu/PanelContainer/MarginContainer/GridContainer2"]
+layout_mode = 2
+theme = ExtResource("11_i1pyg")
+
+[node name="MarginContainer" type="MarginContainer" parent="HSplitContainer/Menu/PanelContainer/MarginContainer/GridContainer2/PanelContainer"]
 layout_mode = 2
 
-[node name="Label" type="Label" parent="HSplitContainer/Menu/PanelContainer/MarginContainer/GridContainer/PanelContainer2/MarginContainer"]
+[node name="Label" type="Label" parent="HSplitContainer/Menu/PanelContainer/MarginContainer/GridContainer2/PanelContainer/MarginContainer"]
 layout_mode = 2

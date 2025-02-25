@@ -1,15 +1,16 @@
-[gd_scene load_steps=34 format=3 uid="uid://uhirk4j0bkkb"]
+[gd_scene load_steps=35 format=3 uid="uid://uhirk4j0bkkb"]
 
 [ext_resource type="Texture2D" uid="uid://g2kwa7mhnktq" path="res://resources/images/logo_white.png" id="1_07ek5"]
 [ext_resource type="FontFile" uid="uid://iund57xk6mri" path="res://resources/fonts/Inter/static/Inter_18pt-Regular.ttf" id="1_c8co6"]
+[ext_resource type="Script" path="res://Scripts/main.gd" id="1_emm26"]
 [ext_resource type="FontFile" uid="uid://dal6uxhenekc3" path="res://resources/fonts/Inter/static/Inter_18pt-Black.ttf" id="2_gohky"]
 [ext_resource type="FontFile" uid="uid://dhnotjof8qyi" path="res://resources/fonts/Inter/static/Inter_18pt-SemiBold.ttf" id="3_vvqq3"]
 [ext_resource type="Texture2D" uid="uid://b2n5p5ufxtk7g" path="res://resources/images/add_circle_2.png" id="4_eu6tk"]
 [ext_resource type="Texture2D" uid="uid://dt31c48jxd7ft" path="res://resources/images/Arrow_down_2.png" id="5_21em6"]
 [ext_resource type="PackedScene" uid="uid://qd5tpgl2irrl" path="res://scenes/calculator.tscn" id="6_t16vj"]
 [ext_resource type="Theme" uid="uid://dxg4j6hfoj3dt" path="res://resources/themes/Panel1.tres" id="8_17kq6"]
-[ext_resource type="Theme" uid="uid://deqsyowfnldyp" path="res://resources/themes/pinkTheme.tres" id="9_kbv7k"]
-[ext_resource type="Theme" uid="uid://defw6ujt7vp0k" path="res://resources/themes/labelBlank.tres" id="10_xapd7"]
+[ext_resource type="Theme" uid="uid://c5n44ickw38bt" path="res://resources/themes/pinkTheme.tres" id="9_kbv7k"]
+[ext_resource type="Theme" path="res://resources/themes/labelBlank.tres" id="10_xapd7"]
 [ext_resource type="Theme" uid="uid://dt5i4g751q0rg" path="res://resources/themes/panelOrange.tres" id="11_i1pyg"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_w5x5b"]
@@ -165,6 +166,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+script = ExtResource("1_emm26")
 
 [node name="ColorRect" type="ColorRect" parent="."]
 layout_mode = 1

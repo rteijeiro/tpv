@@ -67,9 +67,19 @@ func selectNumber(number):
 	price.text = input
 
 func selectOperation(element):
-	res = float(input)
-	input = ''
 	operation = element
+	if res == null:
+		res = float(input)
+	else:
+		if operation == '+':
+			res += float(input)
+		if operation == '-':
+			res -= float(input)
+		if operation == '*':
+			res *= float(input)
+		if operation == '/':
+			res /= float(input)
+	input = ''
 	price.text = input
 
 func _on_resultado_pressed() -> void:
@@ -83,7 +93,6 @@ func _on_resultado_pressed() -> void:
 		res /= float(input)
 	#if operation == '%':
 		#res %= float(input)
-	print(res)
 	price.text = str(res)
 	input = ''
 	res = 0

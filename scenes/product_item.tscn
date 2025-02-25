@@ -1,4 +1,6 @@
-[gd_scene format=3 uid="uid://6jli8q86v1hx"]
+[gd_scene load_steps=2 format=3 uid="uid://6jli8q86v1hx"]
+
+[ext_resource type="Script" path="res://Scripts/product_item.gd" id="1_5cppf"]
 
 [node name="ProductItem" type="Panel"]
 anchors_preset = 15
@@ -8,6 +10,7 @@ offset_right = -1190.0
 offset_bottom = -924.0
 grow_horizontal = 2
 grow_vertical = 2
+script = ExtResource("1_5cppf")
 
 [node name="VBoxContainer" type="VBoxContainer" parent="."]
 layout_mode = 1

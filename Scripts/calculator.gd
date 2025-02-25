@@ -53,13 +53,14 @@ func _on_multiplicacion_pressed() -> void:
 
 func _on_division_pressed() -> void:
 	selectOperation('/')
-
+ 
 func _on_modulo_pressed() -> void:
 	selectOperation('%')
 
 func _on_delete_pressed() -> void:
-	input[-1] = ''
-	price.text = input
+	if input.length() > 0:
+		input[-1] = ''
+		price.text = input
 
 func selectNumber(number):
 	input += number

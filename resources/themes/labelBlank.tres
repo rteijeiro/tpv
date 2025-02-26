@@ -1,7 +1,10 @@
-[gd_resource type="Theme" load_steps=2 format=3 uid="uid://defw6ujt7vp0k"]
+[gd_resource type="Theme" load_steps=3 format=3 uid="uid://defw6ujt7vp0k"]
 
 [ext_resource type="FontFile" uid="uid://bwgc064v3ckw3" path="res://resources/fonts/Inter/static/Inter_18pt-Light.ttf" id="1_bl6xk"]
 
+[sub_resource type="CanvasTexture" id="CanvasTexture_5hfsd"]
+
 [resource]
+Button/icons/icon = SubResource("CanvasTexture_5hfsd")
 Label/font_sizes/font_size = 24
 Label/fonts/font = ExtResource("1_bl6xk")

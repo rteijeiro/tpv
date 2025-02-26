@@ -9,8 +9,8 @@
 [ext_resource type="Texture2D" uid="uid://dt31c48jxd7ft" path="res://resources/images/Arrow_down_2.png" id="5_21em6"]
 [ext_resource type="PackedScene" uid="uid://qd5tpgl2irrl" path="res://scenes/calculator.tscn" id="6_t16vj"]
 [ext_resource type="Theme" uid="uid://dxg4j6hfoj3dt" path="res://resources/themes/Panel1.tres" id="8_17kq6"]
-[ext_resource type="Theme" uid="uid://c5n44ickw38bt" path="res://resources/themes/pinkTheme.tres" id="9_kbv7k"]
-[ext_resource type="Theme" path="res://resources/themes/labelBlank.tres" id="10_xapd7"]
+[ext_resource type="Theme" uid="uid://deqsyowfnldyp" path="res://resources/themes/pinkTheme.tres" id="9_kbv7k"]
+[ext_resource type="Theme" uid="uid://defw6ujt7vp0k" path="res://resources/themes/labelBlank.tres" id="10_xapd7"]
 [ext_resource type="Theme" uid="uid://dt5i4g751q0rg" path="res://resources/themes/panelOrange.tres" id="11_i1pyg"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_w5x5b"]

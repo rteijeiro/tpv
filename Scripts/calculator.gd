@@ -12,7 +12,7 @@ var numbers: Array[int]
 
 func _ready() -> void:
 	price.text = str(5)
-	numbers.append(5)
+	res = 5
 
 func _on_one_pressed() -> void:
 	selectNumber('1')
@@ -77,20 +77,20 @@ func _on_delete_pressed() -> void:
 		price.text = num1
 
 func _on_equals_pressed() -> void:
-	numbers.append(num1)
-	for i in numbers.size():
-		print(numbers[i])
-	for i in numbers.size():
-		print(numbers[i])
-		if operations[i] == '+':
+	#numbers.append(num1)
+	#for i in numbers.size():
+		#print(numbers[i])
+	for i in operations:
+		#print(numbers[i])
+		if i == '+':
 			print("sum")
-			res += float(numbers[i])
-		#if i == '-':
-			#res -= float(numbers[i])
-		#if i == '*':
-			#res *= float(numbers[i])
-		#if i == '/':
-			#res /= float(numbers[i])
+			res += float(num1)
+		if i == '-':
+			res -= float(num1)
+		if i == '*':
+			res *= float(num1)
+		if i == '/':
+			res /= float(num1)
 	price.text = str(res)
 	num1 = ''
 	res = 0

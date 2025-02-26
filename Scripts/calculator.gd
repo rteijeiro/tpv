@@ -2,12 +2,19 @@ extends Control
 
 
 
-var input: String
+var start: bool
+var num1: String
+var num2: String
+var currentNum: int
 var res: float
 var operation: String
 
 @onready var price = $PanelContainer/MarginContainer/PanelContainer/MarginContainer/VBoxContainer/PanelContainer/HBoxContainer/Price
 
+
+func _ready() -> void:
+	start = true
+	currentNum = 1
 
 func _on_one_pressed() -> void:
 	selectNumber('1')
@@ -58,41 +65,80 @@ func _on_slash_pressed() -> void:
 	selectOperation('/')
 
 func selectNumber(number):
-	input += number
-	price.text = input
+	if currentNum == 1:
+		num1 += number
+		price.text = num1
+	else:
+		num2 += number
+		price.text = num2
 
 func selectOperation(element):
 	operation = element
-	if res == null:
-		res = float(input)
+	if start == true:
+		res = float(num1)
+		currentNum = 2
+		start = false
 	else:
-		if operation == '+':
-			res += float(input)
-		if operation == '-':
-			res -= float(input)
-		if operation == '*':
-			res *= float(input)
-		if operation == '/':
-			res /= float(input)
-	input = ''
-	price.text = input
+		if currentNum == 1:
+			if operation == '+':
+				res += float(num1)
+			if operation == '-':
+				res -= float(num1)
+			if operation == '*':
+				res *= float(num1)
+			if operation == '/':
+				res /= float(num1)
+			currentNum = 2
+			num2 = ''
+		else:
+			if operation == '+':
+				res += float(num2)
+			if operation == '-':
+				res -= float(num2)
+			if operation == '*':
+				res *= float(num2)
+			if operation == '/':
+				res /= float(num2)
+			currentNum = 1
+			num1 = ''
+	price.text = element
 
 func _on_equals_pressed() -> void:
-	if operation == '+':
-		res += float(input)
-	if operation == '-':
-		res -= float(input)
-	if operation == '*':
-		res *= float(input)
-	if operation == '/':
-		res /= float(input)
-	#if operation == '%':
-		#res %= float(input)
+	if currentNum == 1:
+		if operation == '+':
+			res += float(num1)
+		if operation == '-':
+			res -= float(num1)
+		if operation == '*':
+			res *= float(num1)
+		if operation == '/':
+			res /= float(num1)
+		#if operation == '%':
+			#res %= float(input)
+	else:
+		if operation == '+':
+			res += float(num2)
+		if operation == '-':
+			res -= float(num2)
+		if operation == '*':
+			res *= float(num2)
+		if operation == '/':
+			res /= float(num2)
+		#if operation == '%':
+			#res %= float(input)
 	price.text = str(res)
-	input = ''
+	num1 = ''
+	num2 = ''
 	res = 0
+	currentNum = 1
+	start = true
 
 func _on_delete_pressed() -> void:
-	if input.length() > 0:
-		input[-1] = ''
-		price.text = input
+	if currentNum == 1:
+		if num1.length() > 0:
+			num1[-1] = ''
+			price.text = num1
+	else:
+		if num2.length() > 0:
+			num2[-1] = ''
+			price.text = num2

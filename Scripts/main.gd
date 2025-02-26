@@ -25,7 +25,7 @@ func load_products():
 
 # Connect each button to their categories
 func connect_category_buttons():
-	var button_container = $HSplitContainer/HSplitContainer/Panel/VBoxContainer
+	var button_container = $HSplitContainer/Menu/Panel/Sections/Margin_Starters/Starters
 	for button in button_container.get_children():
 		button.pressed.connect(func(): show_products(button.text))
 

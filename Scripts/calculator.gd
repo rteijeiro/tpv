@@ -2,19 +2,17 @@ extends Control
 
 
 
-var start: bool
 var num1: String
-var num2: String
-var currentNum: int
 var res: float
-var operation: String
+var operations: Array[String]
+var numbers: Array[int]
 
 @onready var price = $PanelContainer/MarginContainer/PanelContainer/MarginContainer/VBoxContainer/PanelContainer/HBoxContainer/Price
 
 
 func _ready() -> void:
-	start = true
-	currentNum = 1
+	price.text = str(5)
+	numbers.append(5)
 
 func _on_one_pressed() -> void:
 	selectNumber('1')
@@ -65,80 +63,35 @@ func _on_slash_pressed() -> void:
 	selectOperation('/')
 
 func selectNumber(number):
-	if currentNum == 1:
-		num1 += number
-		price.text = num1
-	else:
-		num2 += number
-		price.text = num2
+	num1 += number
+	price.text = num1
 
 func selectOperation(element):
-	operation = element
-	if start == true:
-		res = float(num1)
-		currentNum = 2
-		start = false
-	else:
-		if currentNum == 1:
-			if operation == '+':
-				res += float(num1)
-			if operation == '-':
-				res -= float(num1)
-			if operation == '*':
-				res *= float(num1)
-			if operation == '/':
-				res /= float(num1)
-			currentNum = 2
-			num2 = ''
-		else:
-			if operation == '+':
-				res += float(num2)
-			if operation == '-':
-				res -= float(num2)
-			if operation == '*':
-				res *= float(num2)
-			if operation == '/':
-				res /= float(num2)
-			currentNum = 1
-			num1 = ''
+	operations.append(element)
+	num1 = ''
 	price.text = element
 
+func _on_delete_pressed() -> void:
+	if num1.length() > 0:
+		num1[-1] = ''
+		price.text = num1
+
 func _on_equals_pressed() -> void:
-	if currentNum == 1:
-		if operation == '+':
-			res += float(num1)
-		if operation == '-':
-			res -= float(num1)
-		if operation == '*':
-			res *= float(num1)
-		if operation == '/':
-			res /= float(num1)
-		#if operation == '%':
-			#res %= float(input)
-	else:
-		if operation == '+':
-			res += float(num2)
-		if operation == '-':
-			res -= float(num2)
-		if operation == '*':
-			res *= float(num2)
-		if operation == '/':
-			res /= float(num2)
-		#if operation == '%':
-			#res %= float(input)
+	numbers.append(num1)
+	for i in numbers.size():
+		print(numbers[i])
+	for i in numbers.size():
+		print(numbers[i])
+		if operations[i] == '+':
+			print("sum")
+			res += float(numbers[i])
+		#if i == '-':
+			#res -= float(numbers[i])
+		#if i == '*':
+			#res *= float(numbers[i])
+		#if i == '/':
+			#res /= float(numbers[i])
 	price.text = str(res)
 	num1 = ''
-	num2 = ''
 	res = 0
-	currentNum = 1
-	start = true
-
-func _on_delete_pressed() -> void:
-	if currentNum == 1:
-		if num1.length() > 0:
-			num1[-1] = ''
-			price.text = num1
-	else:
-		if num2.length() > 0:
-			num2[-1] = ''
-			price.text = num2
+	operations.clear()

@@ -2,18 +2,18 @@ extends Control
 
 @onready var grid_container = $HSplitContainer/HSplitContainer/PanelContainer/ScrollContainer/GridContainer
 
-# Diccionario con los productos cargados desde JSON
+# Array with de products loaded from JSON
 var products = []
 
-# Ruta del archivo JSON
+# JSON file path
 const PRODUCTS_FILE = "res://files/products.txt"
 
-# Cargar el archivo JSON al iniciar
+# Load the JSON file at the beginning
 func _ready():
 	load_products()
 	connect_category_buttons()
 
-# Cargar productos desde el JSON
+# Function to load the JSON file
 func load_products():
 	var file = FileAccess.open(PRODUCTS_FILE, FileAccess.READ)
 	if file:
@@ -23,13 +23,13 @@ func load_products():
 			products = json_data
 		file.close()
 
-# Conectar los botones de categoría a la función que los maneja
+# Connect each button to their categories
 func connect_category_buttons():
 	var button_container = $HSplitContainer/HSplitContainer/VBoxContainer
 	for button in button_container.get_children():
 		button.pressed.connect(func(): show_products(button.text))
 
-# Mostrar productos según la categoría seleccionada
+# Show products of each categorie
 func show_products(category: String):
 	grid_container.clear() # Limpiar productos anteriores
 	for product_data in products:
@@ -37,13 +37,13 @@ func show_products(category: String):
 			var product = Product.new(product_data["type"], product_data["name"], product_data["price"])
 			add_product_to_grid(product)
 
-# Instanciar un `ProductItem` y agregarlo al `GridContainer`
+# Instantiate a product_item and adding it to the container
 func add_product_to_grid(product: Product):
 	var product_scene = load("res://product_item.tscn").instantiate()
 	product_scene.set_product(product)
 	grid_container.add_child(product_scene)
 
-# Eliminar todos los productos antes de mostrar nuevos
+# Delete all products before showig others ones
 func clear():
 	for child in grid_container.get_children():
 		child.queue_free()
